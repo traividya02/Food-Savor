@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "food-savour-6fcee",
+    "staging": "food-savour-6fcee"
+  },
+  "targets": {}
+}
