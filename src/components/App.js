@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'
+import '../static/auth.css'
 import { render } from '@testing-library/react';
 import Sketch from 'react-p5';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <Container>
-      <div className="w-100" style={{ maxWidth: "400px" }}>
+      <div className="w-100 box" style={{ maxWidth: "400px" }}>
         <Router>
           <AuthProvider>
             <Switch>
