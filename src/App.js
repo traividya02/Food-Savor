@@ -1,6 +1,13 @@
-import logo from './logo.svg';
 import React, {useEffect, useState } from "react";
+import Link from 'react-router-dom';
 import './App.css';
+
+import Layout from './components/Layout';
+import Landing from './components/Landing/Landing';
+import Navbar from "./components/Navbar/Navbar";
+//Navbar class inside Navbar file inside Navbar folder
+import {BrowserRouter as Router} from 'react-router-dom';
+
 
 function App() {
 
@@ -19,12 +26,16 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <form className="search-form">
-        <input className="search-bar" type="text"></input>
-        <button className="search-button" type="submit">Submit</button>
-      </form>
-    </div>
+    <Router>
+      <div className="App">
+        <div className='container'>
+          {/* <Navbar /> */}
+          <Landing />
+          {/* <Layout /> */}
+        </div>
+      </div>
+    </Router>
+    
   );
 }
 
